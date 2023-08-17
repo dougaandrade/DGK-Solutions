@@ -53,6 +53,7 @@ body {
     margin-left: 68%;
     list-style: none;
     text-transform: uppercase;
+    margin-bottom: 0;
 }
 
 #navbar-itens li {
@@ -69,6 +70,21 @@ body {
     width: 150px;
 
 }
+
+.row{
+    --bs-gutter-x: 0;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    color: #eee;
+    background-color:#252525;
+}
+
 
 #caixa {
     width: 100%;
@@ -153,6 +169,7 @@ tr:hover {
 
 .logo_show {
     width: 90%;
+    z-index: 1;
 }
 
 .logo_show:hover {
