@@ -29,6 +29,7 @@
                 <li class="itens"><a href="#showcase">Inicio</a></li>
                 <li class="itens"><a href="#grafico">Graficos</a></li>
                 <li class="itens"><a href="#tabela_of">Tabelas</a></li>
+                <li class="itens"><ion-icon class="icon-login" name="person-sharp"></ion-icon></li>
             </ul>
         </div>
     </nav>
@@ -53,22 +54,19 @@
 
     <section id="caixa">
         <div id="caixa">
-            <div class="headline">GESTÃO MONETÁRIA</div>
+            <h1 class="headline-1">O que você procura,<br>encontre aqui</h1>
             <div id="caixa-container">
                 <div class="caixa">
-                    <span class="caixa-title"></span>
-                    <h1>ORÇAMENTO</h1>
-                    <p>R$100000</p>
+                    <ion-icon name="calendar-outline"></ion-icon>
+                    <p>Entregas Rápidas</p>
                 </div>
                 <div class="caixa">
-                    <span class="caixa-title"></span>
-                    <h1>INVESTIDO</h1>
-                    <p>R$50000</p>
+                    <ion-icon name="business-outline"></ion-icon>
+                    <p>Atendimento a Empresas</p>
                 </div>
                 <div class="caixa">
-                    <span class="caixa-title"></span>
-                    <h1>PAGAMENTOS</h1>
-                    <p>R$4500</p>
+                    <ion-icon name="build-outline"></ion-icon>
+                    <p>Suporte 24hrs</p>
                 </div>
             </div>
         </div>
@@ -76,73 +74,12 @@
     </section>
 
     <section id="grafico">
-        <div class="headline">DEMANDAS SEMANAIS</div>
-        <div id="grafico-container">
-            <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-            <script type="text/javascript">
-
-                google.charts.load('current', { 'packages': ['corechart'] });
-
-                google.charts.setOnLoadCallback(drawdemandaChart);
-
-                google.charts.setOnLoadCallback(drawareaChart);
-
-                function drawdemandaChart() {
-
-                    var data = new google.visualization.DataTable();
-                    data.addColumn('string', 'Topping');
-                    data.addColumn('number', 'Slices');
-                    data.addRows([
-                        ['FESTAS', 234],
-                        ['INSTAGRAM', 54],
-                        ['RESTAURANTES', 223],
-                        ['LOJAS', 569],
-                        ['CASAMENTOS', 54]
-
-                    ]);
-                    var options = {
-                        title: 'ÁREAS RECENTES',
-                        width: 600,
-                        height: 300
-                    };
-
-                    var chart = new google.visualization.PieChart(document.getElementById('demanda_chart_div'));
-                    chart.draw(data, options);
-                }
-
-                function drawareaChart() {
-                    var data = new google.visualization.DataTable();
-                    data.addColumn('string', 'Topping');
-                    data.addColumn('number', 'Slices');
-                    data.addRows([
-                        ['SOCIAL MEDIA', 100],
-                        ['MOTION DESIGN', 45],
-                        ['DESIGN', 234],
-                        ['WEB DESIGN', 4],
-                        ['VIDEOS', 3]
-                    ]);
-
-                    var options = {
-                        title: 'DEMANDAS RECENTES',
-                        width: 600,
-                        height: 300
-                    };
-
-                    var chart = new google.visualization.PieChart(document.getElementById('area_chart_div'));
-                    chart.draw(data, options);
-                }
-
-            </script>
-            </head>
-
-            <body>
-                <div id="demanda_chart_div"></div>
-                <div id="area_chart_div"></div>
-                </script>
+        <div class="row">
+            <h1 class="headline-1">DEMANDAS SEMANAIS</h1>
         </div>
     </section>
 
-    <section id="tabela_of">
+    <section id="tabela-demanda">
         <div class="headline">SERVIÇOS CONTRATADOS</div>
         <div class="content">
             <table class="tabela">
@@ -243,13 +180,11 @@
         </div>
     </section>
 
-
-    <footer id="footer">
+    <footer>
         <p>Copyright (c) 2022 DGK Solutions - Todos os direitos reservados
         <p>
         <p>Design by - Douglas Andrade - DGK</p>
     </footer>
-
 
     <div id="modal-ative" class="modal-container">
         <div class="modal">
@@ -259,10 +194,12 @@
             <p class="text_small">AREA DO ADMINISTRADOR</p>
         </div>
     </div>
+
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script src="./js/modal.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
-        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"crossorigin="anonymous"></script>
 
 </body>
 

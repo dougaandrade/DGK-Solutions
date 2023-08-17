@@ -2,6 +2,10 @@
     font-family: semi;
     src: url(/assets/fonts/Montserrat-SemiBold.ttf)
 }
+@font-face {
+    font-family: col1;
+    src: url(/assets/fonts/coolvetica.otf)
+}
 
 * {
     box-sizing: border-box;
@@ -20,15 +24,14 @@ body {
     font-family: semi;
 }
 
-.headline {
-    font-size: 2.2rem;
+.headline-1 {
+    font-size: 2rem;
     text-transform: uppercase;
     font-weight: bold;
-    text-align: center;
-    padding-top: 20px;
-    padding-bottom: 50px;
+    text-align: left;
+    padding: 10px 0 10px 0;
+    font-family: semi;
     letter-spacing: 2px;
-
 }
 
 #navbar {
@@ -50,7 +53,7 @@ body {
 
 #navbar-itens {
     display: flex;
-    margin-left: 68%;
+    margin-left: 74%;
     list-style: none;
     text-transform: uppercase;
     margin-bottom: 0;
@@ -85,6 +88,13 @@ body {
     background-color:#252525;
 }
 
+ion-icon {
+    font-size: 64px;
+}
+
+.icon-login{
+    font-size: 20px;
+}
 
 #caixa {
     width: 100%;
@@ -94,6 +104,9 @@ body {
 }
 
 #caixa-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     width: 100%;
     padding-top: 2px;
     display: grid;
@@ -107,6 +120,11 @@ body {
     padding: 20px;
     border-radius: 15px;
     text-align: center;
+}
+
+.caixa:hover{
+    background-color: #ffffff;
+    color: #252525;
 }
 
 .caixa-title {
@@ -177,7 +195,7 @@ tr:hover {
     transition: transform .3s ease;
 }
 
-#footer {
+footer {
     width: 100%;
     margin: 0 auto;
     padding: 20px;
