@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>DGK Solutions</title>
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="shortcut icon" href="./img/logo-icon-white.png" type="image/x-icon">
+
+    <link rel="stylesheet"  href="./css/index.css">
+    <link rel="stylesheet"  href="./css/showcase.css">
+    <link rel="stylesheet"  href="./css/modal.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+<body>
+
+    <nav id="navbar">
+        <div id="navbar-container">
+            <div><img src="/assets/img/logo-principal-white.png" class="logo"></div>
+            <ul id="navbar-itens">
+                <li class="itens"><a href="#showcase">Inicio<a></li>
+                <li class="itens"><a href="#grafico">Graficos<a></li>
+                <li class="itens"><a href="#tabela_of">Tabelas<a></li>  
+            </ul>
+        </div>
+    </nav>
+
+    <header id="showcase">
+        <div id="showcase-container">
+            <img src="/assets/img/logo-principal-white.png" class="logo_show">
+        </div>
+    </header>
+   
+    <section id="caixa">
+        <div id="caixa">
+            <div class="headline">GESTÃO MONETÁRIA</div>
+                <div id="caixa-container">
+                <div class="caixa">
+                    <span class="caixa-title"></span>
+                    <h1>ORÇAMENTO</h1>
+                    <p>R$100000</p>
+                </div>
+                <div class="caixa">
+                    <span class="caixa-title"></span>
+                    <h1>INVESTIDO</h1>
+                    <p>R$50000</p>
+                </div>
+                <div class="caixa">
+                    <span class="caixa-title"></span>
+                    <h1>PAGAMENTOS</h1>
+                    <p>R$4500</p>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="grafico">
+        <div class="headline">DEMANDAS SEMANAIS</div>
+        <div id="grafico-container">
+            <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+            <script type="text/javascript">
+        
+              google.charts.load('current', {'packages':['corechart']});
+
+              google.charts.setOnLoadCallback(drawdemandaChart);
+        
+              google.charts.setOnLoadCallback(drawareaChart);
+        
+              function drawdemandaChart() {
+        
+                var data = new google.visualization.DataTable();
+                data.addColumn('string', 'Topping');
+                data.addColumn('number', 'Slices');
+                data.addRows([
+                  ['FESTAS', 234],
+                  ['INSTAGRAM', 54],
+                  ['RESTAURANTES', 223],
+                  ['LOJAS', 569],
+                  ['CASAMENTOS', 54]
+
+                ]);
+                var options = {title:'ÁREAS RECENTES',
+                    width:600,
+                    height:300};
+                    
+                var chart = new google.visualization.PieChart(document.getElementById('demanda_chart_div'));
+                chart.draw(data, options);
+              }
+        
+              function drawareaChart() {
+                var data = new google.visualization.DataTable();
+                data.addColumn('string', 'Topping');
+                data.addColumn('number', 'Slices');
+                data.addRows([
+                  ['SOCIAL MEDIA', 100],
+                  ['MOTION DESIGN', 45],
+                  ['DESIGN', 234],
+                  ['WEB DESIGN', 4],
+                  ['VIDEOS', 3]
+                ]);
+        
+                var options = {title:'DEMANDAS RECENTES',
+                    width:600,
+                    height:300};
+        
+                var chart = new google.visualization.PieChart(document.getElementById('area_chart_div'));
+                chart.draw(data, options);
+              }
+              
+            </script>
+          </head>
+          <body>
+                <div id="demanda_chart_div"></div>
+                <div id="area_chart_div"></div>
+            </script>
+        </div>
+    </section>
+
+    <section id="tabela_of">
+            <div class="headline">SERVIÇOS CONTRATADOS</div>
+            <div class="content">
+                <table class="tabela">
+                    <thead>
+                        <tr>
+                            <th>ID_CÓDIGO</th>
+                            <th>SERVIÇO</th>
+                            <th>VALOR</th>
+                            <th>DATA</th>
+                        </tr>
+                    </thead>
+                
+                    <tbody>
+                        <tr>
+                            <td>#56SFW324</td>
+                            <td>SOCIAL MEDIA</td>
+                            <td>R$700,00</td>
+                            <td>04/01/2022</td>
+                        </tr>
+                    </tbody>
+
+                    <tbody>
+                        <tr>
+                            <td>#56SFW324</td>
+                            <td>VIDEOS</td>
+                            <td>R$600,00</td>
+                            <td>24/09/2022</td>
+                        </tr>
+                    </tbody>
+
+                    <tbody>
+                        <tr>
+                            <td>#56SFW324</td>
+                            <td>MOTION DESIGN</td>
+                            <td>R$5500,00</td>
+                            <td>12/03/2022</td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td>#56SFW324</td>
+                            <td>DESIGN</td>
+                            <td>R$330,00</td>
+                            <td>12/09/2022</td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td>#56SFW324</td>
+                            <td>WEB DESIGN</td>
+                            <td>R$500,00</td>
+                            <td>29/04/2022</td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td>#56SFW324</td>
+                            <td>MOTION DESIGN</td>
+                            <td>R$5500,00</td>
+                            <td>12/03/2022</td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td>#56SFW324</td>
+                            <td>DESIGN</td>
+                            <td>R$330,00</td>
+                            <td>12/09/2022</td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td>#56SFW324</td>
+                            <td>WEB DESIGN</td>
+                            <td>R$500,00</td>
+                            <td>29/04/2022</td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td>#56SFW324</td>
+                            <td>SOCIAL MEDIA</td>
+                            <td>R$700,00</td>
+                            <td>04/01/2022</td>
+                        </tr>
+                    </tbody>
+
+                    <tbody>
+                        <tr>
+                            <td>#56SFW324</td>
+                            <td>VIDEOS</td>
+                            <td>R$6000,00</td>
+                            <td>24/09/2022</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+      
+    <footer id="footer">
+        <p>Copyright (c) 2022 DGK Solutions - Todos os direitos reservados<p>
+        <p>Design by - Douglas Andrade - DGK</p>  
+    </footer>
+
+        
+    <div id="modal-ative" class="modal-container">
+            <div class="modal">
+              <button class="fechar">x</button>
+              <h2><img src="./img/logo-principal-white.png" class="logo_modal"></h2>
+              <h2 class="text_medium">MARKETING COMPANY®</h2>
+              <p class="text_small">AREA DO ADMINISTRADOR</p>
+            </div>  
+    </div>
+    <script src="./js/modal.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+</body>
+</html>

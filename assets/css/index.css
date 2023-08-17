@@ -1,0 +1,172 @@
+@font-face {
+    font-family: semi;
+    src: url(/assets/fonts/Montserrat-SemiBold.ttf)
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+    font-family: semi;
+}
+
+.headline {
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    letter-spacing: 2px;
+
+}
+
+#navbar {
+    width: 100%;
+    background: #111;
+    color: #eee;
+    position: fixed;
+    z-index: 1;
+}
+
+#navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+#navbar-itens {
+    display: flex;
+    margin-left: 68%;
+    list-style: none;
+    text-transform: uppercase;
+}
+
+#navbar-itens li {
+    padding: 15px;
+
+}
+
+.itens:hover {
+    background-color: #3b3b3b;
+    color: rgb(255, 255, 255);
+}
+
+.logo {
+    width: 150px;
+
+}
+
+#caixa {
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    padding: 30px;
+}
+
+#caixa-container {
+    width: 100%;
+    padding-top: 2px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 20px;
+}
+
+.caixa {
+    display: inline-block;
+    background: rgb(41, 41, 41);
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.caixa-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.caixa h1 {
+    color: red;
+}
+
+#grafico {
+    width: 100%;
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+#grafico-container {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 90px;
+}
+
+.content {
+    display: flex;
+    width: 95%;
+    margin: 0 auto;
+    padding-bottom: 90px;
+    color: rgb(255, 255, 255);
+}
+
+.tabela {
+    width: 100%;
+    text-align: center;
+    background-color: #222020;
+    border-radius: 15px;
+    box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.55);
+
+}
+
+.tabela thead {
+    background: #eee;
+    font-weight: bold;
+    color: rgb(59, 59, 59);
+}
+
+table,
+th,
+td {
+    border: 1px rgb(0, 0, 0);
+    border-collapse: collapse;
+    padding: 8px;
+    border-bottom: 1px;
+}
+
+tr:hover {
+    background-color: #ffffff;
+    color: #111;
+}
+
+.logo_show {
+    width: 90%;
+}
+
+.logo_show:hover {
+    transform: scale(1.1);
+    transition: transform .3s ease;
+}
+
+#footer {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    background: #111;
+    color: #eee;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 10px;
+}

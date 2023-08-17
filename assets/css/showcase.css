@@ -1,0 +1,15 @@
+
+#showcase {
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #eee;
+    background:url(/assets/img/img1.webp)no-repeat center center/cover;
+    background-color: rgba(0, 0, 0, 0.7);
+    background-blend-mode: color;
+}
+
+#showcase-container{
+    text-align: center;
+}
