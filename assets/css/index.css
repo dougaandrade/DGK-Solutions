@@ -2,6 +2,7 @@
     font-family: semi;
     src: url(/assets/fonts/Montserrat-SemiBold.ttf)
 }
+
 @font-face {
     font-family: col1;
     src: url(/assets/fonts/coolvetica.otf)
@@ -24,12 +25,56 @@ body {
     font-family: semi;
 }
 
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-bottom: 0;
+}
+
 .headline-1 {
     font-size: 2rem;
     text-transform: uppercase;
     font-weight: bold;
     text-align: left;
-    padding: 10px 0 10px 0;
+    padding: 10px 0 50px 0;
+    font-family: semi;
+    letter-spacing: 2px;
+}
+.headline-2{
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: left;
+    padding: 10px 0 50px 0;
+    font-family: semi;
+    letter-spacing: 2px;
+}
+
+.headline-empresa {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: left;
+    padding: 0 0 0 10px;
+    font-family: semi;
+    letter-spacing: 2px;
+}
+
+.desc-empresa {
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: left;
+    padding: 15px 0 15px 0;
     font-family: semi;
     letter-spacing: 2px;
 }
@@ -74,29 +119,69 @@ body {
 
 }
 
-.row{
+.row {
     --bs-gutter-x: 0;
-}
-
-.container{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-content: center;
-    align-items: center;
-    color: #eee;
-    background-color:#252525;
 }
 
 ion-icon {
     font-size: 64px;
 }
 
-.icon-login{
+.icon-login {
     font-size: 20px;
 }
 
+.icon-person-1 {
+    width: 100px;
+    height: 100px;
+    content: "";
+    background-image: url(/assets/img/IBM.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 100%;
+}
+
+.img-galeria {
+    width: 80%;
+    border-radius: 10px;
+    aspect-ratio: 3/2;
+    box-shadow: 0 10px 9px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.img-galeria:hover{
+    transform: scale(1.2);
+    transition: 0.5s;
+    
+}
+
+.icon-person-2 {
+    width: 100px;
+    height: 100px;
+    content: "";
+    background-image: url(/assets/img/MS.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 100%;
+}
+
+.content-empresa {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 5px;
+    align-items: center;
+}
+
 #caixa {
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    padding: 30px;
+}
+
+#empresas {
     width: 100%;
     background-color: rgb(0, 0, 0);
     color: rgb(255, 255, 255);
@@ -107,11 +192,23 @@ ion-icon {
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
     width: 100%;
     padding-top: 2px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 20px;
+}
+
+#empresas-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 100%;
+    padding-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-row-gap: 10px;
 }
 
 .caixa {
@@ -122,19 +219,21 @@ ion-icon {
     text-align: center;
 }
 
-.caixa:hover{
+.caixa-empresas {
+    display: flex;
+    align-items: center;
+    background: rgb(41, 41, 41);
+    padding: 20px;
+    border-radius: 15px;
+    text-align: left;
+}
+
+.caixa:hover {
     background-color: #ffffff;
     color: #252525;
 }
 
-.caixa-title {
-    font-size: 1.2rem;
-    font-weight: bold;
-}
-
-.caixa h1 {
-    color: red;
-}
+/* Grafico */
 
 #grafico {
     width: 100%;
@@ -156,50 +255,32 @@ ion-icon {
     color: rgb(255, 255, 255);
 }
 
-.tabela {
+/* Tabela */
+
+#tabela-demanda {
     width: 100%;
-    text-align: center;
-    background-color: #222020;
-    border-radius: 15px;
-    box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.55);
-
+    color: rgb(0, 0, 0);
+    padding: 30px;
 }
 
-.tabela thead {
-    background: #eee;
-    font-weight: bold;
-    color: rgb(59, 59, 59);
-}
-
-table,
-th,
-td {
-    border: 1px rgb(0, 0, 0);
-    border-collapse: collapse;
-    padding: 8px;
-    border-bottom: 1px;
-}
-
-tr:hover {
+.container-galeria {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    gap: 50px;
     background-color: #ffffff;
-    color: #111;
+    border-radius: 15px;
 }
 
-.logo_show {
-    width: 90%;
-    z-index: 1;
-}
 
-.logo_show:hover {
-    transform: scale(1.1);
-    transition: transform .3s ease;
-}
+/* Footer */
 
 footer {
     width: 100%;
     margin: 0 auto;
     padding: 20px;
-    background: #111;
+    background: #000;
     color: #eee;
     text-align: center;
     text-transform: uppercase;
