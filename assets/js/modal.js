@@ -10,5 +10,5 @@ function iniciaModal(modalID) {
         });
     }
 }
-const caixa = document.querySelector('.icon-login');
+const caixa = document.querySelector('.login');
 caixa.addEventListener('click', () => iniciaModal('modal-ative'));
